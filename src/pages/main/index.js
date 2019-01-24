@@ -17,6 +17,12 @@ export default class Main extends Component {
     }
     
     render () {
-        return <h1>Contagem de produtos: {this.state.products.length} </h1>
+        return (
+            <div className="product-list">
+                { this.state.products.map( products =>(
+                    <h2 key={products._id}>{products.title}</h2>
+                ))}
+            </div>
+        )
     }
 }
