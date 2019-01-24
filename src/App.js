@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './styles.css';
+import Header from './components/header/index'
 
-class App extends Component {
-  render() {
-    return (
-      <h1>Hello!</h1>
-    );
-  }
-}
+
+const App = () => (
+  <div className="App">
+    <Header/>
+  </div>
+)
 
 export default App;
